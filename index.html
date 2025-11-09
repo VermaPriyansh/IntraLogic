@@ -1164,7 +1164,7 @@
                 <div style="display: flex; gap: var(--space-24); align-items: flex-start; justify-content: center;">
                   <!-- Drum Graphic -->
                   <div style="flex: 1; width: 350px; height: 500px;">
-                    <img id="drum-graphic" src="C:\Users\dkpra\Downloads\drum dashboard\DrumSelection0.png" alt="Drum Vessel" style="width: 100%; height: 100%; object-fit: contain; border-radius: var(--radius-lg);">
+                    <img id="drum-graphic" src="./DrumSelection0.png" alt="Drum Vessel" style="width: 100%; height: 100%; object-fit: contain; border-radius: var(--radius-lg);">
                   </div>
                   <!-- Drum Vessel Segments -->
                   <div style="flex: 1; width: 350px; height: 500px;">
@@ -1354,7 +1354,7 @@
           damage_type: 'Severe Corrosion',
           confidence_score: 0.94,
           timestamp: '2025-11-08T09:23:15Z',
-          image_thumbnail: 'C:\\Users\\dkpra\\Downloads\\drum dashboard\\corrosion.jpg',
+          image_thumbnail: './corrosion.jpg',
           description: 'Advanced corrosion with material loss on weld seam',
           supervisor_reviewed: false,
           auto_dispatch_ready: true,
@@ -1367,7 +1367,7 @@
           damage_type: 'Crack Propagation',
           confidence_score: 0.91,
           timestamp: '2025-11-08T08:45:22Z',
-          image_thumbnail: 'C:\\Users\\dkpra\\Downloads\\drum dashboard\\crack.png',
+          image_thumbnail: './crack.png',
           description: 'Stress crack detected near circumferential weld',
           supervisor_reviewed: false,
           auto_dispatch_ready: true,
@@ -1380,7 +1380,7 @@
           damage_type: 'Shell Thinning',
           confidence_score: 0.89,
           timestamp: '2025-11-08T10:12:08Z',
-          image_thumbnail: 'C:\\Users\\dkpra\\Downloads\\drum dashboard\\thin.png',
+          image_thumbnail: './thin.png',
           description: 'Significant wall thickness reduction detected - below minimum spec',
           supervisor_reviewed: false,
           auto_dispatch_ready: true,
@@ -1567,13 +1567,13 @@
 
       // Drum Graphic Hover State Management
       const drumGraphicImages = {
-        0: 'C:\\Users\\dkpra\\Downloads\\drum dashboard\\DrumSelection0.png',
-        1: 'C:\\Users\\dkpra\\Downloads\\drum dashboard\\DrumSelection1.png',
-        2: 'C:\\Users\\dkpra\\Downloads\\drum dashboard\\DrumSelection2.png',
-        3: 'C:\\Users\\dkpra\\Downloads\\drum dashboard\\DrumSelection3.png',
-        4: 'C:\\Users\\dkpra\\Downloads\\drum dashboard\\DrumSelection4.png',
-        5: 'C:\\Users\\dkpra\\Downloads\\drum dashboard\\DrumSelection5.png',
-        6: 'C:\\Users\\dkpra\\Downloads\\drum dashboard\\DrumSelection6.png'
+        0: './DrumSelection0.png',
+        1: './DrumSelection1.png',
+        2: './DrumSelection2.png',
+        3: './DrumSelection3.png',
+        4: './DrumSelection4.png',
+        5: './DrumSelection5.png',
+        6: './DrumSelection6.png'
       };
 
       function updateDrumGraphic(segmentNumber) {
@@ -1886,9 +1886,9 @@
         const gallery = document.getElementById('image-gallery');
         gallery.innerHTML = '';
         const images = [
-          'C:\\Users\\dkpra\\Downloads\\drum dashboard\\stock1.png',
-          'C:\\Users\\dkpra\\Downloads\\drum dashboard\\stock2.png',
-          'C:\\Users\\dkpra\\Downloads\\drum dashboard\\stock3.png',
+          './stock1.png',
+          './stock2.png',
+          './stock3.png',
         ];
         
         images.forEach(img => {
@@ -1956,7 +1956,7 @@
         
         content.innerHTML = `
           <div class="analysis-section">
-            <img src="C:\\Users\\dkpra\\Downloads\\drum dashboard\\corrosion.jpg" alt="Defect image" class="defect-image-large">
+            <img src="./corrosion.jpg" alt="Defect image" class="defect-image-large">
           </div>
           
           <div class="analysis-section">
